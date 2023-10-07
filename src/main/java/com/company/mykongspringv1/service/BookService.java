@@ -38,4 +38,12 @@ public class BookService {
     public List<Book> findByPublishedDateAfter(LocalDate date) {
         return bookRepository.findByPublishedDateAfter(date);
     }
+
+    public void deleteAll() {
+        bookRepository.deleteAll();
+    }
+
+    public void saveAll(List<Book> books) {
+        bookRepository.saveAll(books);
+    }
 }

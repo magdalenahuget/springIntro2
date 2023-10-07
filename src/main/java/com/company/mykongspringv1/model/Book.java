@@ -28,6 +28,9 @@ public class Book {
         this.publishDate = publishDate;
     }
 
+    public Book(String bookA, BigDecimal bigDecimal, LocalDate of) {
+    }
+
     public Long getId() {
         return id;
     }
